@@ -1,6 +1,7 @@
 {
-  "name": "Start on Heroku: Java",
-  "description": "A barebones Java app, which can easily be deployed to Heroku.",
+  "name": "Spring Boot Heroku Demo",
+  "description": "A barebones Spring-Boot app, which can easily be deployed to Heroku.",
+  "repository": "https://github.com/dempey/pioneer",
   "image": "heroku/java",
   "addons": [ "heroku-postgresql" ]
 }
