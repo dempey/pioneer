@@ -1,5 +1,7 @@
-package com.github.dempey.pioneer;
+package com.github.dempey.pioneer.controller;
 
+import com.github.dempey.pioneer.entity.Record;
+import com.github.dempey.pioneer.repository.RecordRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

@@ -45,6 +45,12 @@
       <artifactId>liquibase-core</artifactId>
       <version>3.5.3</version>
     </dependency>
+
+    <!-- Add Spring Security -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
   </dependencies>
 
   <properties>
