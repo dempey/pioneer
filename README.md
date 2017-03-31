@@ -45,3 +45,24 @@ do the following.
 
     ```server.port: ${port:8080}```
     
+__Run the project in debug mode (Intellij)__
+
+Create a debug configuration
+
+1. Click Run | Edit Configurations
+2. Click '+' and select Remote
+3. Enter a name in the top field like 'Pioneer Debug'
+4. Click Apply | OK
+
+Start the app in debug mode
+
+    mvn spring-boot:run -Drun.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=5005 -Dserver.port=8080"
+    
+Connect to the debug port
+
+1. Click Run | Debug...
+2. Select 'Pioneer Debug' or whatever name you added
+
+Open your browser to localhost:8080
+
+Any java breakpoints you add may now be fired as you walk through the code.
