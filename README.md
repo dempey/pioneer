@@ -5,7 +5,7 @@ A barebones Spring-Boot template, which can easily be deployed to Heroku.
 ### Getting Started
 
 A good example of getting started with deploying a Spring Boot application to
-Heroku can be found [here]("https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku").
+Heroku can be found [here](https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku).
 
 ### Tips and Tricks
 
