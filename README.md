@@ -9,6 +9,10 @@ Heroku can be found [here](https://devcenter.heroku.com/articles/deploying-sprin
 
 ### Tips and Tricks
 
+__Start Spring Boot application locally__
+
+    mvn spring-boot:run
+
 __View project logs from system__
 
     heroku logs --app pioneer-project
@@ -27,3 +31,17 @@ static web resources located within any of the following directories:
 
 This allows me to reference the stylesheet by simply referencing the path 'styles/app.css'.
 
+__Heroku reports "App crashed" after successful deployment__
+
+By default, Spring Boot will listen on port 8080 when it's started.  Heroku though will assign
+a port number at random so your application will crash.  To resolve this, 
+do the following.
+
+1. In Procfile file at root of the project, make sure the line reads
+
+    ```web: java $JAVA_OPTS -jar target/*.jar```
+  
+2. In the file /resources/application.properties add this line
+
+    ```server.port: ${port:8080}```
+    
