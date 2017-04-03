@@ -37,6 +37,57 @@ body {
     margin-left: 13px;
 }
 
+/* BEGIN: Styling of login link */
+.public-login-logout-link {
+    position: relative;
+    float: right;
+    top: -32px;
+}
+
+.public-login-logout-link a:link {
+    color: ivory;
+    text-decoration: none;
+}
+.public-login-logout-link a:visited {
+    color: ivory;
+    text-decoration: none;
+}
+.public-login-logout-link a:hover {
+    color: ivory;
+    text-decoration: none;
+}
+.public-login-logout-link a:active {
+    color: ivory;
+    text-decoration: none;
+}
+/* END: Styling of login link */
+
+/* BEGIN: Styling of project name link */
+a:link.project-name-link {
+    color: ivory;
+    text-decoration: none;
+}
+a:visited.project-name-link {
+    color: ivory;
+    text-decoration: none;
+}
+a:hover.project-name-link {
+    color: ivory;
+    text-decoration: none;
+}
+a:active.project-name-link {
+    color: ivory;
+    text-decoration: none;
+}
+/* END: Styling of project name link */
+
+.public-login-logout {
+    position: relative;
+    top: -55px;
+    float: right;
+    right: 15px;
+}
+
 /* BEGIN login form styling */
 .login-form-container {
     position: fixed;
@@ -44,7 +95,7 @@ body {
     height: 250px;
     top: 30%;
     left: 43%;
-    margin-top: -140px;
+    margin-top: -50px;
     margin-left: -170px;
     background: #fff;
     border-radius: 3px;
