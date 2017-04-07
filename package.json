@@ -1,0 +1,36 @@
+{
+  "name": "pioneer-project",
+  "version": "0.0.1",
+  "description": "An experimental project",
+  "main": "static/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dempey/pioneer.git"
+  },
+  "author": "David Empey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dempey/pioneer/issues"
+  },
+  "homepage": "https://github.com/dempey/pioneer#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "node-jquery": "^0.1.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-native": "^0.43.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "webpack": "^2.3.3"
+  }
+}

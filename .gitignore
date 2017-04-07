@@ -2,3 +2,7 @@ target
 .env
 .idea/
 *.iml
+node_modules
+bundle.js
+node/
+npm-debug.log
