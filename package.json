@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/dempey/pioneer/issues"
   },
+  "engines": {
+    "node": "v6.9.1"
+  },
   "homepage": "https://github.com/dempey/pioneer#readme",
   "dependencies": {
     "jquery": "^3.2.1",
