@@ -69,46 +69,26 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
       <plugin>
-        <groupId>com.github.eirslett</groupId>
-        <artifactId>frontend-maven-plugin</artifactId>
-        <!-- Use the latest released version:
-        https://repo1.maven.org/maven2/com/github/eirslett/frontend-maven-plugin/ -->
-        <version>1.4</version>
-
+        <!-- This plugin just runs 'npm run build' as if from the command line -->
+        <!-- The configuration file is just the package.json file in the project root. -->
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
         <executions>
           <execution>
-            <id>install node and npm</id>
+            <id>npm run build (compile)</id>
             <goals>
-              <goal>install-node-and-npm</goal>
+              <goal>exec</goal>
             </goals>
+            <phase>compile</phase>
             <configuration>
-              <nodeVersion>v6.9.1</nodeVersion>
-              <npmVersion>3.10.8</npmVersion>
-              <!-- Use the local package.json file -->
-              <triggerfile>package.json</triggerfile>
+              <executable>npm</executable>
+              <arguments>
+                <argument>run</argument>
+                <argument>build</argument>
+              </arguments>
             </configuration>
           </execution>
-
-          <execution>
-            <id>npm install</id>
-            <goals>
-              <goal>npm</goal>
-            </goals>
-            <configuration>
-              <arguments>install</arguments>
-            </configuration>
-          </execution>
-
-          <execution>
-            <id>npm run build</id>
-            <goals>
-              <goal>npm</goal>
-            </goals>
-            <configuration>
-              <arguments>run build</arguments>
-            </configuration>
-          </execution>
-
         </executions>
       </plugin>
     </plugins>
