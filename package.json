@@ -5,8 +5,8 @@
   "main": "static/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "build": "webpack -p"
+    "build": "webpack --config ./webpack.config.js --progress --colors",
+    "start": "node ./src/main/resources/static/components/app.js"
   },
   "repository": {
     "type": "git",
