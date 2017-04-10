@@ -68,29 +68,6 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
-      <!--<plugin>-->
-        <!--&lt;!&ndash; This plugin just runs 'npm run build' as if from the command line &ndash;&gt;-->
-        <!--&lt;!&ndash; The configuration file is just the package.json file in the project root. &ndash;&gt;-->
-        <!--<groupId>org.codehaus.mojo</groupId>-->
-        <!--<artifactId>exec-maven-plugin</artifactId>-->
-        <!--<version>1.6.0</version>-->
-        <!--<executions>-->
-          <!--<execution>-->
-            <!--<id>npm run build (compile)</id>-->
-            <!--<goals>-->
-              <!--<goal>exec</goal>-->
-            <!--</goals>-->
-            <!--<phase>compile</phase>-->
-            <!--<configuration>-->
-              <!--<executable>npm</executable>-->
-              <!--<arguments>-->
-                <!--<argument>run</argument>-->
-                <!--<argument>build</argument>-->
-              <!--</arguments>-->
-            <!--</configuration>-->
-          <!--</execution>-->
-        <!--</executions>-->
-      <!--</plugin>-->
     </plugins>
   </build>
 
