@@ -3,6 +3,5 @@ target
 .idea/
 *.iml
 node_modules
-react-bundle.js
 node/
 npm-debug.log
