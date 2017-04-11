@@ -4,7 +4,6 @@
   "description": "An experimental project",
   "main": "static/index.js",
   "scripts": {
-    "postinstall": "libraries/react-bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config ./webpack.config.js --progress --colors",
     "build:production": "NODE_ENV=production webpack --config webpack.config.js --progress --colors",
@@ -36,7 +35,6 @@
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "copy-webpack-plugin": "^4.0.1",
     "webpack": "^2.3.3"
   }
 }

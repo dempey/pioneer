@@ -1,5 +1,4 @@
 var webpack = require('webpack');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
 var path = require('path');
 var versionOutputExtension = require('./package.json').version;
 
