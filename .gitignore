@@ -5,3 +5,6 @@ target
 node_modules
 node/
 npm-debug.log
+
+Design_*.sql
+Design.txt

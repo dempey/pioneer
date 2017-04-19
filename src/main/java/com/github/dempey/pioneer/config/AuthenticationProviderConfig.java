@@ -38,7 +38,7 @@ public class AuthenticationProviderConfig {
         JdbcDaoImpl jdbcImpl = new JdbcDaoImpl();
         jdbcImpl.setDataSource(dataSource());
         jdbcImpl.setUsersByUsernameQuery("select username, password, enabled from users where username=?");
-        jdbcImpl.setAuthoritiesByUsernameQuery("select b.username, a.role from user_roles a, users b where b.username=? and a.userid=b.userid");
+        jdbcImpl.setAuthoritiesByUsernameQuery("select u.username, r.role from user_roles r, users u where u.username=? and r.user_id=u.id");
         return jdbcImpl;
     }
 }

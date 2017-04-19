@@ -6,6 +6,8 @@
         <title>Pioneer - Home</title>
         <link rel="stylesheet" type="text/css" href="anonymous/styles/public.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="anonymous/styles/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="anonymous/styles/slick/slick-theme.css"/>
     </head>
     <body>
         <div id="public-header"></div>
@@ -24,9 +26,31 @@
                 <h2>Welcome to the landing page.</h2>
                 <p>Click <a th:href="@{/app}">here</a> to see the app.</p>
             </div>
+            <div id="public-images"></div>
         </div>
 
-        <script>$("#public-header").load("/anonymous/components/publicheader.html");</script>
-
+        <script type="text/javascript" src="anonymous/styles/slick/slick.min.js"></script>
+        <script>
+            $("#public-header").load("anonymous/components/publicheader.html");
+        </script>
+        <script sec:authorize="isAnonymous()">
+            $("#public-images").load("anonymous/components/publicimages.html");
+        </script>
+        <script type="text/javascript" src="anonymous/styles/slick/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.public-images').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    fade: true,
+                    centerMode: true,
+                    pauseOnHover: true,
+                    dots: true,
+                    swipe: true
+                });
+            });
+        </script>
     </body>
 </html>
