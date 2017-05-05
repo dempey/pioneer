@@ -10,7 +10,7 @@ module.exports = {
     ],
     output: {
         path: path.join(__dirname, 'src/main/resources/static/libraries/'),
-        filename: 'walker-bundle.js'
+        filename: 'bundle.js'
     },
     resolve: {
         modules: ['node_modules', 'src/main/resources/static'],
