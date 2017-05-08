@@ -1,5 +1,12 @@
 import React from 'react';
 import $ from 'jquery';
+import Switch from 'react-router-dom/Switch';
+import Route from 'react-router-dom/Route';
+import Link from 'react-router-dom/Link';
+import Schedule from './schedule';
+import Account from './account';
+import Contactus from './contactus';
+import Faq from './faq';
 
 export default class App extends React.Component {
 
@@ -8,13 +15,22 @@ export default class App extends React.Component {
         return (
 
             <div>
-                <h3>Welcome to the People Walker application</h3>
-                <p>This is the first page of the people walker application.</p>
-                <ul>
-                    <li>Schedule a people walker.</li>
-                    <li>Pick your route.</li>
-                    <li>Give a review of your experience.</li>
-                </ul>
+              <div>
+                <div>
+                  <Link to='/schedule'>Schedule A Walk</Link>
+                  <Link to='/account'>Account</Link>
+                  <Link to='/contactus'>Contact Us</Link>
+                  <Link to='/faq'>FAQs</Link>
+                </div>
+              </div>
+              <main>
+                <Switch>
+                  <Route path='/schedule' component={Schedule}/>
+                  <Route path='/account' component={Account}/>
+                  <Route path='/contactus' component={Contactus}/>
+                  <Route path='/faq' component={Faq}/>
+                </Switch>
+              </main>
             </div>
 
         )
