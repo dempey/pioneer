@@ -1,4 +1,124 @@
 body {
     font-family: sans-serif;
     font-size: 14px;
+    overflow: hidden;
+}
+
+.people-walker-header {
+    overflow: hidden;
+    position: fixed;
+    text-shadow: 0 1px 3px black;
+    background-image: url("../images/brick-path-wide-smaller.jpg");
+    height: 220px;
+    width: 99%;
+    color: cornsilk;
+}
+
+.people-walker-header h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding-left: 25px;
+    margin-bottom: 2px;
+}
+
+.people-walker-header h3 {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-style: italic;
+    padding-left: 25px;
+    margin-top: 0px;
+}
+
+.people-walker-main-content {
+    position: relative;
+    top: 220px;
+}
+
+/* BEGIN: styling of navigation buttons */
+.people-walker-nav-button {
+    padding: 8px;
+    background: #efefef;
+    display: inline-block;
+    height: 12px;
+    width: 130px;
+    margin-right: 55px;
+    position: relative;
+    color: #778899;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.people-walker-nav-button:after {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-top: 28px solid #efefef;
+    border-bottom: 50px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -50px;
+}
+
+.people-walker-nav-button a:link {
+    color: #778899;
+    text-decoration: none;
+}
+.people-walker-nav-button a:visited {
+    color: #778899;
+    text-decoration: none;
+}
+.people-walker-nav-button a:hover {
+    color: #778899;
+    text-decoration: none;
+}
+.people-walker-nav-button a:active {
+    color: #778899;
+    text-decoration: none;
+}
+/* END: styling of navigation buttons */
+
+/* BEGIN: Styling of login link */
+.people-walker-login-logout-link {
+    position: absolute;
+    float: right;
+    top: 205px;
+    z-index: 1000;
+    text-decoration: none;
+    right: 20px;
+    color: cornsilk;
+}
+
+.people-walker-login-logout-link a:link {
+    color: cornsilk;
+    text-decoration: none;
+}
+.people-walker-login-logout-link a:visited {
+    color: cornsilk;
+    text-decoration: none;
+}
+.people-walker-login-logout-link a:hover {
+    color: cornsilk;
+    text-decoration: none;
+}
+.people-walker-login-logout-link a:active {
+    color: cornsilk;
+    text-decoration: none;
+}
+/* END: Styling of login link */
+
+.people-walker-nav {
+
+}
+
+.people-walker-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    color: #778899;
 }

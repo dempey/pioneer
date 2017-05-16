@@ -1,8 +1,4 @@
-package com.github.dempey.pioneer.entity;
-
-import org.hibernate.validator.constraints.NotEmpty;
-
-import javax.persistence.*;
+package com.github.dempey.pioneer.model;
 
 //@Entity
 public class User {

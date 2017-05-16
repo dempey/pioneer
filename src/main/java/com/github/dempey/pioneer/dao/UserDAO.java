@@ -1,6 +1,6 @@
 package com.github.dempey.pioneer.dao;
 
-import com.github.dempey.pioneer.entity.User;
+import com.github.dempey.pioneer.model.User;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
