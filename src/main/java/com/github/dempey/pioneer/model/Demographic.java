@@ -1,11 +1,5 @@
-package com.github.dempey.pioneer.entity;
+package com.github.dempey.pioneer.model;
 
-import org.hibernate.validator.constraints.NotEmpty;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import java.sql.Date;
 
 //@Entity

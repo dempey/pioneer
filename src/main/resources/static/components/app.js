@@ -14,13 +14,13 @@ export default class App extends React.Component {
 
         return (
 
-            <div>
-              <div>
+            <div className="people-walker-main-content">
+              <div className="people-walker-nav">
                 <div>
-                  <Link to='/schedule'>Schedule A Walk</Link>
-                  <Link to='/account'>Account</Link>
-                  <Link to='/contactus'>Contact Us</Link>
-                  <Link to='/faq'>FAQs</Link>
+                  <div className="people-walker-nav-button"><Link to='/schedule'>Schedule A Walk</Link></div>
+                  <div className="people-walker-nav-button"><Link to='/account'>Account</Link></div>
+                  <div className="people-walker-nav-button"><Link to='/contactus'>Contact Us</Link></div>
+                  <div className="people-walker-nav-button"><Link to='/faq'>FAQs</Link></div>
                 </div>
               </div>
               <main>

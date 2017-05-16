@@ -1,6 +1,6 @@
 package com.github.dempey.pioneer.repository;
 
-import com.github.dempey.pioneer.entity.Record;
+import com.github.dempey.pioneer.model.Record;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

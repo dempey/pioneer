@@ -1,4 +1,4 @@
-package com.github.dempey.pioneer.entity;
+package com.github.dempey.pioneer.model;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
