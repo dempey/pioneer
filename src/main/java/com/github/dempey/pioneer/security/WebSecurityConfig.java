@@ -28,6 +28,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
             .authorizeRequests()
                 .antMatchers("/", "/anonymous/**/*").permitAll()
+                .antMatchers("/walker/*").hasAnyRole()  //alternative is .hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
             .formLogin()

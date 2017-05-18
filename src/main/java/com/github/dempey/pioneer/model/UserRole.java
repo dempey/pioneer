@@ -1,17 +1,11 @@
 package com.github.dempey.pioneer.model;
 
-//@Entity
 public class UserRole {
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-//    @NotEmpty
-//    @JoinColumn(name = "id")
     private User user;
 
-//    @NotEmpty
     private String role;
 
     public long getId() {
