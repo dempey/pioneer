@@ -2,35 +2,24 @@ package com.github.dempey.pioneer.model;
 
 import java.sql.Date;
 
-//@Entity
 public class Demographic {
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-//    @NotEmpty
     private String firstName;
 
-//    @NotEmpty
     private String lastName;
 
-//    @NotEmpty
     private Date birthDate;
 
-//    @NotEmpty
     private String gender;
 
-//    @NotEmpty
     private String streetAddress;
 
-//    @NotEmpty
     private String city;
 
-//    @NotEmpty
     private String state;
 
-//    @NotEmpty
     private Long zipCode;
 
     private String interests;

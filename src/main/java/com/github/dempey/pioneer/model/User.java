@@ -1,23 +1,15 @@
 package com.github.dempey.pioneer.model;
 
-//@Entity
 public class User {
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-//    @NotEmpty
     private String username;
 
-//    @NotEmpty
     private String password;
 
-//    @NotEmpty
     private boolean enabled;
 
-//    @NotEmpty
-//    @JoinColumn(name = "id")
     private Demographic demographic;
 
     public long getId() {
