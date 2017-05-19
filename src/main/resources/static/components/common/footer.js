@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
         return (
 
             <div className="people-walker-footer">
-              <p>This is the footer</p>
+              <p>Some additional footer information</p>
             </div>
 
         )

@@ -44,6 +44,18 @@ do the following.
 2. In the file /resources/application.properties add this line
 
     ```server.port: ${port:8080}```
+
+__Autodeploy during React.js development__
+
+Because the React.js code is embedded inside the Pioneer project, there is a workaround for running
+just the React code.  Following the steps below will allow the developer to make changes to any React
+code and quickly see the change appear in the browser.  The alternative would be to do a complete
+npm build and then deploy the whole project, then go through the sign-in process to see the change.
+
+1. In a separate terminal window, run the command, "webpack --watch" from the project root.
+2. In another terminal window (could be in your IDE if it supplies one), run the command, "webpack-dev-server --debug".
+3. Go to http://localhost:8080/dev-index.html.
+4. After a React.js change, click on the browser refresh button to see your changes.
     
 __Run the project in debug mode (Intellij)__
 
